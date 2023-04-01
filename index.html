@@ -1,124 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Derivado de "Proyecto: libro de recetas"</title>
         <meta charset="utf-8">
+        <title>Cuestionario</title>
+        <link rel="stylesheet" type="text/css" href="practica2.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
         <style>
-        body{background-color:rgb(220, 260,250);
+               *{margin: 0px;
+    padding: 0px;
+    }
+    body{
+        display: flex;
+        background-color:#03122d;
+    }
+    .boton{ 
+      font-family: monospace;
+      border-radius: 10PX;
+      color:whitesmoke;
+      background-color: #00001a;
+      border:1px solid #00001a;    
+      margin:auto;
+      text-align: center;
+      margin:575px 100px 0px 100px;
+      position: relative;
+      cursor:pointer;
+      width: 1100px; 
+      height:80px;     
+      }
+      .boton:hover {
+        font-weight: bold;
+        border-color: whitesmoke;
+      }
+       .p{
+        font-weight: bold;
+        font-size: 40px;
+       }
+        form{
+            color:whitesmoke;
+            text-align: center;
+            margin-top: 10px;
         }
-         table{background-color:rgb(111,200,200);}   
-        
-        th{background-color:rgb(161, 177, 237);}
-        td{background-color:rgb(245, 155, 245);}
-            #t1{color:rgb(46, 94, 16);}
-             .td{background-color:rgb(255, 207, 168);}
+       .div1{
+         background-color:#021a46;
+         position: absolute;
+         margin:15px 200px 15px 250px;
+         width: 800px;
+         height:540px;
+         border:2px solid whitesmoke;
+            }
         </style>
-    </head>
-    <body>
-       
-        <center><h1 id="t1">Pagina de recetas</h1></center>
-        <h2>Recetas:</h2>
-        
-        <ol>
-            <li><a href="#r1">Receta #1</a></li>
-            <li><a href="#r2">Receta #2</a></li>
-        </ol>
-        
-        <h2 id="r1">Receta #1</h2>
-        <h3>Pollo dulce</h3>
-        <center><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/pasta.png" alt="Imagen de un pollo cocinado" width="350"></center>
-        <ul>
-            <li>Tiempo: 30 minutos</li>
-            <li>Utencilios:1 olla, sarten, cuacharas.</li>
-        </ul>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredientes</th>
-                    <th>Cantidad</th>
-                </tr>
-            </thead>
-            <tbody>
-                 <tr>
-                    <td>Aceite</td>
-                    <td>30 mnl</td>
-                </tr>
-                 <tr>
-                    <td>Pollo</td>
-                    <td>Depende de su consumo</td>
-                </tr>
-                 <tr>        
-                 <td>Azucar</td>
-                 <td>100 gramos</td>
-                     
-                 </tr>
-                 <tr>        
-                 <td>sal</td>
-                 <td>50 gramos</td>
-                     
-                 </tr>
-                 
-            </tbody>
-        </table>
-        
-        <p><strong>Preparacion:</strong>
-        <br>-Ponemos a cocinar el pollo con agua y sal(por 20 minutos).
-        <br>-En un sarten calentamos un poco de aceite.
-        <br>-Cuando el aceite este caliende agregamos 2 cucharadas de azucar.
-        <br>-Meneamos lentamente la azucar hasta que se disuelva.
-        <br>-Agregamos el pollo a el caramelo para dorarlo y darle la cobertura que buscamos.
-        <br>-Acompañalo con lo que quieras, ¡Disfruta!
-</p>
-    
-        <h2 id="r2">Receta #2</h2>
-        <h3>Arepas Venezolanas</h3>
-        <a href="https://es.wikipedia.org/wiki/Arepa"><center><img src="https://es.wikipedia.org/wiki/Arepa#/media/Archivo:Typical_breakfast_in_Venezuela.jpg"alt="Imagen de arepas Venezolanas" width="350"></center></a>
-        <ul>
-            <li>Tiempo: 25 minutos</li>
-            <li>Utencilios:1 bol, sarten, cucharas.</li>
-        </ul>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredientes</th>
-                    <th>Cantidad</th>
-                </tr>
-            </thead>
-            <tbody>
-                 <tr>
-                    <td class="td">Aceite</td>
-                    <td class="td">30 mnl</td>
-                </tr>
-                 <tr>
-                    <td class="td">Arina de pan</td>
-                    <td class="td">Depende de su consumo</td>
-                </tr>
-                 <tr>        
-                 <td class="td">Azucar</td>
-                 <td class="td">100 gramos</td>
-                     
-                 </tr>
-                 <tr>        
-                 <td class="td">sal</td>
-                 <td class="td">50 gramos</td>
-                     
-                 </tr>
-                 
-            </tbody>
-        </table>
-        
-        <p><strong>Preparacion:</strong>
-        <br>-Agregamos la arina de pan a el bol.
-        <br>-Agregamos un poco de sal y azucar.
-        <br>-Adiccionamos agua con cuidado(no mucha).
-        <br>-Mezclamos toda la masa hasta lograr una con consistencia adecuada.(medio aguada, pero no dura)
-        <br>-Tomamos un poco de la masa y hacemos una bolita.
-        <a href="https://www.youtube.com/watch?v=YRmc06zxons"><br>-Aplastamos de manera sincronizada.(minuto 4.45)</a>
-        <br>-Acompañalo con lo que quieras, ¡Disfruta!
-</p>    
-    <p><em>Referencia: <a href="https://www.youtube.com/watch?v=YRmc06zxons">wikipedia y Juan Pedro cocina( youtube)</a></em></p>
-    
+        </head>
+      <a href="https://www.alamy.es/te-quiero-significado-te-amo-en-lengua-espanola-con-una-ilustracion-de-corazon-escrita-a-mano-sobre-un-fondo-blanco-image398195098.html"><body>
+         <a>
+         <button class="boton">
+            Confirma aquí 
+        </button>
+        </a>
+       <div class="div1">
+         <form name=" recopilacion datos">
+            <p class="p"> Cuestionario</p>
+            <br><br>
+             <label for="id2"> Nombre</label> 
+              <input type="text" name="name" id="id2" required autofocus>
+             <label for="id3"> Apellido</label> 
+              <input type="text" name="apellido" id="id3" required>
+              <br><br>
+               <label for="id4"> Edad</label> 
+                <input type="number" name="edad" id="id4"required>
+                 <label for="id5">Sexo</label> 
+                     <select id="id5" name="sexo" required>
+                         <option >Masculino</option>
+                         <option >Femenino</option>
+                         <option >Prefiero no decirlo</option>
+                     </select>
+                  <br> <br>
+                   <label for="id"> Correo</label>  
+                    <input type="email" name="Correos" id="id"required placeholder="tucorreo@gmail.com">
+                         <label for="n1">Nùmero de telefono</label>
+                           <input type="tel" name="telefono" id="n1"required min="7" max="15" size="15">
+                            <br> <br>
+                            <label for="id6">Estado civil</label> 
+                            <select id="id6" name="estdo civil" required>
+                             <option >Soltero/a</option>
+                             <option >Casado/a</option>
+                             </select>
+                               <label for="color">Color favorito</label>
+                            <input type="color" id="colors" name="colores">
+                               <br> <br>
+                              <input type="reset">
+                                <input type="submit" value="Enviar">
+         </form>     
+       </div>  
     </body>
 </html>
